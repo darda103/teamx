@@ -1,0 +1,56 @@
+.showcase-1 {
+    .team {
+        .single-member {
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            img {
+                width: 100%;
+            }
+            .over {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0px;
+                height: 100%;
+                padding: 10px 0;
+                background: rgba($color3, 0.7);
+                transition: 0.6s;
+                opacity: 0;
+                i {
+                    display: block;
+                    text-align: center;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 20px;
+                    color: $black;
+                    transition: 0.6s;
+                    &:hover {
+                        color: $red;
+                    }
+                }
+            }
+            .name {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                padding: 20px 0;
+                background: linear-gradient(to left, $color2, $color1);
+                h2 {
+                    margin: 0;
+                    color: $white;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            }
+            &:hover {
+                .over {
+                    width: 60px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
